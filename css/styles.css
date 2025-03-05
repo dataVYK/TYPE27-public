@@ -19,11 +19,16 @@ rgb(21,7,51) */
 
 main {
   background-color: rgb(70, 24, 172);
-  max-width: 1920px;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
+.content-wrapper {
+  max-width: calc(1200px + 40px);
+  padding: 0 20px;
+  margin: 0 auto;
+}
 /* Header Styles */
 
 header {
@@ -33,15 +38,19 @@ header {
   width: 100%;
 }
 
-
-
-.header-top {
+.header-top-bg {
   background-color: rgb(70, 24, 172);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.header-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
-  min-width: 1250px;
+  width: 100%;
 }
 
 header .searchbar {
@@ -64,8 +73,8 @@ header .searchbar {
   cursor: pointer;
 }
 
-.header-svg-button:hover{
-  color: rgb(220, 187, 21) ;
+.header-svg-button:hover {
+  color: rgb(220, 187, 21);
 }
 
 .header-top input {
@@ -79,8 +88,8 @@ header .searchbar {
   width: 400px;
 }
 
-.header-button{
-  background-color: rgb(250,211,24);
+.header-button {
+  background-color: rgb(250, 211, 24);
   border: none;
   padding: 0.5rem 1rem;
   font-weight: 600;
@@ -89,8 +98,8 @@ header .searchbar {
   transition: 0.3s;
 }
 
-.header-button:hover{
-  background-color:rgb(190, 161, 18) ;
+.header-button:hover {
+  background-color: rgb(190, 161, 18);
 }
 
 .strip {
@@ -99,20 +108,25 @@ header .searchbar {
   background-color: white;
 }
 
+.header-bottom-bg {
+  background-color: rgb(52, 18, 129);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header-bottom {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgb(52, 18, 129);
-  min-width: 1250px;
+  width: 100%;
 }
-
-.header-bottom .header-white-svg{
+.header-bottom .header-white-svg {
   width: 20px;
   height: 20px;
 }
 
-.header-bottom-button{
+.header-bottom-button {
   display: flex;
   align-items: center;
   background-color: transparent;
@@ -124,8 +138,8 @@ header .searchbar {
   cursor: pointer;
 }
 
-.header-bottom-button:hover{
-  color: rgb(220, 187, 21) ;
+.header-bottom-button:hover {
+  color: rgb(220, 187, 21);
   background-color: rgb(35, 13, 86);
 }
 
@@ -144,18 +158,18 @@ header .searchbar {
   height: 100px;
 }
 
-
-
 /* section "ads-banner" 
 ---------------------*/
-.ads-banner {
+
+.ads-banner-wrapper {
+  max-width: 1920px;
+}
+.ads-banner-items {
   display: grid;
   grid-template-columns: 3fr repeat(3, 1fr);
-  max-width: 1920px;
-  margin: auto;
 }
 
-.ads-banner img {
+.ads-banner-items img {
   width: 100%;
   height: 20vh;
   object-fit: cover;
@@ -163,10 +177,12 @@ header .searchbar {
 
 /* top carousel
 ---------------------*/
+
 .top-carousel-wrapper nav {
   display: flex;
-  padding: 2rem 20px;
-  justify-content: space-around;
+  padding: 2rem 0px;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .top-carousel-wrapper nav button {
@@ -194,6 +210,7 @@ header .searchbar {
   flex-direction: column;
   gap: 10px;
   align-items: center;
+  text-decoration: none;
 }
 
 /* Section  "gamers-posts"
