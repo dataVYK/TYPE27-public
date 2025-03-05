@@ -70,7 +70,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1920px;
 }
 
 .content-wrapper {
@@ -99,7 +98,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  width: 100%;
+  width: 1200px;
 }
 
 header .searchbar {
@@ -167,8 +166,7 @@ header .searchbar {
 .header-bottom {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100%;
+  width: 1200px;
 }
 .header-bottom .header-white-svg {
   width: 20px;
@@ -211,11 +209,13 @@ header .searchbar {
 ---------------------*/
 
 .ads-banner-wrapper {
-  max-width: 1920px;
+  width: 100%;
 }
+
 .ads-banner-items {
   display: grid;
   grid-template-columns: 3fr repeat(3, 1fr);
+  width: 100%;
 }
 
 .ads-banner-items img {
@@ -265,10 +265,12 @@ header .searchbar {
 /* Section  "gamers-posts"*/
 
 .new-game-consoles {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: rgb(70, 24, 172);
   color: white;
-  height: 100vh;
+  width: 100%;
 }
 
 .new-game-consoles a img {
@@ -276,25 +278,69 @@ header .searchbar {
   height: 20px;
 }
 
-.new-game-consoles h1 {
+.header-of-content {
+  display: flex;
+  align-items: center;
+  justify-content: left;
   padding-bottom: 2rem;
+  width: 1200px;
 }
 
 .new-game-consoles a {
   display: flex;
+  justify-content: center;
   align-items: center;
   color: white;
   text-decoration: none;
-  padding: 1rem 3rem;
+  width: 240px;
+  padding: 1rem 0rem;
   gap: 1rem;
   font-weight: 600;
   font-size: 1.1rem;
 }
 
+.new-game-consoles a:hover {
+  color: rgb(220, 187, 21);
+  background-color: rgb(52, 18, 129);
+}
+
 .new-game-consoles-top {
   display: flex;
   align-items: center;
+  justify-content: left;
+  width: 1200px;
+}
+.new-game-consoles-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(52, 18, 129);
+  width: 1200px;
+  padding: 0.5rem 2.5rem;
+}
+
+.new-game-consoles-bottom img {
+  width: 80px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.little-tower {
+  width: 1px;
+  height: 50px;
+  background-color: rgb(70, 24, 172);
+}
+
+.new-game-consoles-bottom .text-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+
+.new-game-consoles-bottom .text-column:hover {
+  color: rgb(220, 187, 21);
 }
 
 /* section "promoted"
