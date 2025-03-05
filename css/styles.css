@@ -5,11 +5,10 @@ rgb(52,18,129)
 Footer color
 rgb(21,7,51) */
 
-/* Card item for reuse
+/* Card item for all sections
+--------------------------
 
-*/
-
-.card-wrapper {
+ .card-wrapper {
   display: flex;
   flex-direction: column;
   border: 1px solid gold;
@@ -51,7 +50,8 @@ rgb(21,7,51) */
 
 .delivery {
   color: rgb(110, 110, 110);
-}
+} 
+ */
 
 /* Global Styles 
 ---------------------*/
