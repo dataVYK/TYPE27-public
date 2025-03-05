@@ -18,6 +18,18 @@ rgb(21,7,51) */
 
 /* section "ads-banner" 
 ---------------------*/
+.ads-banner {
+  display: grid;
+  grid-template-columns: 3fr repeat(3, 1fr);
+  max-width: 1920px;
+  margin: auto;
+}
+
+.ads-banner img {
+  width: 100%;
+  height: 20vh;
+  object-fit: cover;
+}
 
 /* Section  "gamers-posts"
 ---------------------*/
