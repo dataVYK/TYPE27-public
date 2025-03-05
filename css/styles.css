@@ -22,6 +22,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 1920px;
 }
 
 .content-wrapper {
@@ -213,8 +214,39 @@ header .searchbar {
   text-decoration: none;
 }
 
-/* Section  "gamers-posts"
----------------------*/
+/* Section  "gamers-posts"*/
+
+.new-game-consoles {
+  width: 100%;
+  background-color: rgb(70, 24, 172);
+  color: white;
+}
+
+.new-game-consoles a img {
+  width: 28px;
+  height: 20px;
+}
+
+.new-game-consoles h1 {
+  padding-bottom: 2rem;
+}
+
+.new-game-consoles a {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  gap: 1rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.new-game-consoles-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* section "promoted"
 ---------------------*/
