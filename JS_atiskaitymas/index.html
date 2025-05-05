@@ -9,42 +9,44 @@
 </head>
 
 <body>
-  <header>
-    <div class="container header-wrapper">
-      <div class="logo-wrapper">
-        <h1>The Mysterious Shop</h1>
-        <p>Rare and Magical Items from Beyond the Veil</p>
+  <div class="site-wrapper">
+    <header>
+      <div class="container header-wrapper">
+        <div class="logo-wrapper">
+          <h1>The Mysterious Shop</h1>
+          <p>Rare and Magical Items from Beyond the Veil</p>
+        </div>
+        <div class="nav-wrapper">
+          <nav>
+            <a href="./index.html" class="active">Browse Catalog</a>
+            <a href="./add/index.html" class="add-item-btn">Add New Item</a>
+          </nav>
+        </div>
       </div>
-      <div class="nav-wrapper">
-        <nav>
-          <a href="./index.html" class="active">Browse Catalog</a>
-          <a href="./add/index.html" class="add-item-btn">Add New Item</a>
-        </nav>
+    </header>
+
+    <main class="container">
+      <div class="filters">
+        <h2>Magical Inventory</h2>
+        <div class="sort-controls">
+          <span>Sorted by price (lowest to highest)</span>
+        </div>
       </div>
-    </div>
-  </header>
 
-  <main class="container">
-    <div class="filters">
-      <h2>Magical Inventory</h2>
-      <div class="sort-controls">
-        <span>Sorted by price (lowest to highest)</span>
+      <div id="items-wrapper" class="items-grid">
+        <!-- Items will be populated here by JavaScript -->
+        <div class="loading">Summoning items from the ethereal plane...</div>
       </div>
-    </div>
+    </main>
 
-    <div id="items-wrapper" class="items-grid">
-      <!-- Items will be populated here by JavaScript -->
-      <div class="loading">Summoning items from the ethereal plane...</div>
-    </div>
-  </main>
+    <footer>
+      <div class="container">
+        <p>The Mysterious Shop &copy; 2025 - Not responsible for accidental transmutations or dimensional shifts</p>
+      </div>
+    </footer>
 
-  <footer>
-    <div class="container">
-      <p>The Mysterious Shop &copy; 2025 - Not responsible for accidental transmutations or dimensional shifts</p>
-    </div>
-  </footer>
-
-  <script type="module" src="./js/main.js"></script>
+    <script type="module" src="./js/main.js"></script>
+  </div>
 </body>
 
 </html>
