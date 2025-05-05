@@ -64,6 +64,7 @@ const showError = (errorText) => {
   loadingElement.style.display = 'none';
   message.textContent = errorText;
   message.classList.add('error-message');
+  message.style.display = 'block';
 };
 
 // Initialize the page
@@ -81,6 +82,7 @@ deleteBtn.addEventListener('click', async () => {
       // Show success message
       message.textContent = '✨ This item has been banished from our realm! Returning to catalog shortly...';
       message.classList.add('success-message');
+      message.style.display = 'block';
 
       // Redirect back to the catalog after 3 seconds
       setTimeout(() => {

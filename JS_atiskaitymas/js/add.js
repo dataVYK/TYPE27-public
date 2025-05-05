@@ -11,6 +11,12 @@ const locationInput = document.getElementById('location');
 const successMessage = document.getElementById('success-message');
 const errorMessage = document.getElementById('error-message');
 
+// Initialize by hiding messages
+document.addEventListener('DOMContentLoaded', () => {
+  errorMessage.style.display = 'none';
+  successMessage.style.display = 'none';
+});
+
 // Clear error message
 const clearError = () => {
   errorMessage.textContent = '';
@@ -28,6 +34,7 @@ submitBtn.addEventListener('click', async () => {
   // Clear previous messages
   clearError();
   successMessage.textContent = '';
+  successMessage.style.display = 'none';
 
   // Collect form data
   const data = {
@@ -53,6 +60,7 @@ submitBtn.addEventListener('click', async () => {
     if (item && item.id) {
       // Show success message
       successMessage.textContent = '✨ Your magical item has been successfully conjured into our inventory! Returning to catalog shortly...';
+      successMessage.style.display = 'block';
 
       // Clear the form
       nameInput.value = '';
