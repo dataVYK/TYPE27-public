@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Magical Item - Mysterious Shop</title>
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <h1>The Mysterious Shop</h1>
+      <p>Rare and Magical Items from Beyond the Veil</p>
+      <nav>
+        <a href="../index.html">Browse Catalog</a>
+        <a href="./index.html" class="active">Add New Item</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="back-link">
+      <a href="../index.html">&larr; Back to Catalog</a>
+    </div>
+
+    <div class="add-form">
+      <h2>Manifest a New Magical Item</h2>
+
+      <div class="form-group">
+        <label for="name">Item Name:</label>
+        <input type="text" id="name" placeholder="Ancient Crystal of Wisdom">
+      </div>
+
+      <div class="form-group">
+        <label for="price">Price (gold coins):</label>
+        <input type="number" id="price" placeholder="99">
+      </div>
+
+      <div class="form-group">
+        <label for="imgUrl">Image URL:</label>
+        <input type="text" id="imgUrl" placeholder="https://example.com/image.jpg">
+      </div>
+
+      <div class="form-group">
+        <label for="description">Mystical Properties:</label>
+        <textarea id="description" rows="4" placeholder="Describe the magical properties of this item..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="location">Available At:</label>
+        <input type="text" id="location" placeholder="Secret Tower in Misty Forest">
+      </div>
+
+      <div class="form-actions">
+        <button id="submit-btn" class="primary-btn">Conjure Item</button>
+      </div>
+
+      <div id="success-message" class="message success-message"></div>
+      <div id="error-message" class="message error-message"></div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>The Mysterious Shop &copy; 2025 - Not responsible for accidental transmutations or dimensional shifts</p>
+    </div>
+  </footer>
+
+  <script type="module" src="../js/add.js"></script>
+</body>
+
+</html>
